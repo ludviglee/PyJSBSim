@@ -1,0 +1,9 @@
+.pydevproject
+.project
+build
+PyJSBSim.egg-info
+_PyJSBSim.so
+PyJSBSim.py
+*.pyc
+PyJSBSim_wrap.cpp
+*.o
