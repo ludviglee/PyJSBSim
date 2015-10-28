@@ -14,6 +14,7 @@
 #include <JSBSim/models/FGSurface.h>
 #include <JSBSim/models/FGLGear.h>
 #include <JSBSim/models/FGFCS.h>
+#include <JSBSim/models/propulsion/FGEngine.h>
 #include <JSBSim/models/FGPropulsion.h>
 #include <JSBSim/models/FGMassBalance.h>
 #include <JSBSim/math/FGFunction.h>
@@ -56,6 +57,7 @@ namespace std
 %include <JSBSim/models/FGSurface.h>
 %include <JSBSim/models/FGLGear.h>
 %include <JSBSim/models/FGFCS.h>
+%include <JSBSim/models/propulsion/FGEngine.h>
 %include <JSBSim/models/FGPropulsion.h>
 %include <JSBSim/models/FGMassBalance.h>
 %include <JSBSim/math/FGFunction.h>
