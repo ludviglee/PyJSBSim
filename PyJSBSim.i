@@ -24,8 +24,8 @@
 #include <JSBSim/models/FGPropagate.h>
 #include <JSBSim/models/FGAuxiliary.h>
 #include <JSBSim/models/FGOutput.h>
-#include <JSBSim/FGFDMExec.h>
 #include <JSBSim/models/FGAircraft.h>
+#include <JSBSim/FGFDMExec.h>
 #include <JSBSim/initialization/FGTrimAxis.h>
 #include <JSBSim/initialization/FGTrim.h>
 %}
@@ -43,6 +43,7 @@ namespace std
 %ignore JSBSim::FGFDMExec::GetChildFDM;
 %ignore JSBSim::FGLocation::GetGroundCallback;
 %ignore JSBSim::FGLocation::SetGroundCallback;
+%ignore JSBSim::FGAircraft::unbind;
 
 %include <JSBSim/FGJSBBase.h>
 %include <JSBSim/math/FGMatrix33.h>
@@ -52,6 +53,7 @@ namespace std
 %include <JSBSim/models/FGModel.h>
 %include <JSBSim/initialization/FGInitialCondition.h>
 %include "jsbsim_wrapper/FGPropertyManager.h"
+//%include <JSBSim/input_output/FGPropertyManager.h>
 %include <JSBSim/models/FGPropagate.h>
 %include <JSBSim/models/FGAtmosphere.h>
 %include <JSBSim/models/FGAccelerations.h>
@@ -68,8 +70,7 @@ namespace std
 %include <JSBSim/models/FGPropagate.h>
 %include <JSBSim/models/FGAuxiliary.h>
 %include <JSBSim/models/FGOutput.h>
+%include <JSBSim/models/FGAircraft.h>
 %include <JSBSim/FGFDMExec.h>
-//%include <JSBSim/models/FGAircraft.h>
-%include "jsbsim_wrapper/FGAircraft.h"
 %include <JSBSim/initialization/FGTrimAxis.h>
 %include <JSBSim/initialization/FGTrim.h>
