@@ -15,7 +15,8 @@ install:
   - cd build
   - cmake -DBUILD_SHARED_LIBS=true ..
   - make
-  - sudo make install
+  - sudo make installi
+  - sudo ldconfig
   - cd ../..
   - python setup.py build_ext install
 script:
