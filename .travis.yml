@@ -14,6 +14,7 @@ install:
   - make
   - sudo make install
   - cd ../..
+  - python setup.py build_ext install
 script:
   - cd examples
   - python JSBSim.py ../jsbsim_build/ scripts/737_cruise.xml
