@@ -5,6 +5,9 @@ dist: trusty
 python:
   - "2.6"
   - "2.7"
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y swig
 install:
   - git clone https://github.com/pmatigakis/jsbsim.git
   - cd jsbsim
