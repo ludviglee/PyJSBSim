@@ -1,0 +1,19 @@
+language: python
+sudo: required
+os: linux
+dist: trusty
+python:
+  - "2.6"
+  - "2.7"
+install:
+  - git clone https://github.com/pmatigakis/jsbsim.git
+  - cd jsbsim
+  - mkdir build
+  - cd build
+  - cmake -DBUILD_SHARED_LIBS=true ..
+  - make
+  - sudo make install
+  - cd ../..
+script:
+  - cd examples
+  - python JSBSim.py ../jsbsim_build/ scripts/737_cruise.xml

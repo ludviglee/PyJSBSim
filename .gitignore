@@ -9,3 +9,4 @@ PyJSBSim_wrap.cpp
 *.o
 dist
 virtualenv
+*.*~
