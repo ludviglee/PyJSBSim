@@ -21,4 +21,4 @@ install:
   - python setup.py build_ext install
 script:
   - cd examples
-  - python JSBSim.py ../jsbsim_build/ scripts/737_cruise.xml
+  - python JSBSim.py ../jsbsim/ scripts/737_cruise.xml
