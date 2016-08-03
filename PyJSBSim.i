@@ -53,7 +53,6 @@ namespace std
 %include <JSBSim/models/FGModel.h>
 %include <JSBSim/initialization/FGInitialCondition.h>
 %include "jsbsim_wrapper/FGPropertyManager.h"
-//%include <JSBSim/input_output/FGPropertyManager.h>
 %include <JSBSim/models/FGPropagate.h>
 %include <JSBSim/models/FGAtmosphere.h>
 %include <JSBSim/models/FGAccelerations.h>
