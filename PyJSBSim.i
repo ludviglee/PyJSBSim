@@ -30,6 +30,15 @@
 #include <JSBSim/initialization/FGTrim.h>
 %}
 
+%exception DoTrim {
+   try {
+      $action
+   } catch (char const* e) {
+      PyErr_SetString(PyExc_Exception, e);
+      return NULL;
+   }
+}
+
 %include "std_string.i"
 %include "std_vector.i"
 
