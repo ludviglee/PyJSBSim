@@ -10,3 +10,4 @@ PyJSBSim_wrap.cpp
 dist
 virtualenv
 *.*~
+.idea
